@@ -1,0 +1,321 @@
+/* Hydrodiff Custom Login Page Styles */
+
+/* Main container - two column layout */
+.hydrodiff-login {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(135deg, #f8fbfd 0%, #eef5f9 100%);
+  padding: 0;
+  max-width: 100%;
+}
+
+.hydrodiff-login__form-container {
+  flex: 1 1 50%;
+  min-width: 320px;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hydrodiff-login__image-container {
+  flex: 1 1 50%;
+  min-width: 320px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hydrodiff-login__image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+.hydrodiff-login__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.hydrodiff-login__subtitle {
+  font-size: 1.1rem;
+  color: #5a5a6e;
+  margin: 0 0 40px 0;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+/* Form styles */
+.hydrodiff-login__form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.hydrodiff-login__field {
+  margin-bottom: 24px;
+}
+
+.hydrodiff-login__label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.hydrodiff-login__label--required::after {
+  content: '*';
+  color: #e74c3c;
+  margin-left: 2px;
+}
+
+.hydrodiff-login__input {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1a1a2e;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.hydrodiff-login__input:focus {
+  outline: none;
+  border-color: #00a0dc;
+  box-shadow: 0 0 0 3px rgba(0, 160, 220, 0.1);
+}
+
+.hydrodiff-login__input::placeholder {
+  color: #a0a0a0;
+}
+
+/* Forgot password link */
+.hydrodiff-login__forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.hydrodiff-login__forgot-password a {
+  font-size: 0.9rem;
+  color: #5a5a6e;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.hydrodiff-login__forgot-password a:hover {
+  color: #00a0dc;
+  text-decoration: underline;
+}
+
+/* Submit button */
+.hydrodiff-login__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 18px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #00a0dc 0%, #0088c2 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.hydrodiff-login__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 160, 220, 0.3);
+}
+
+.hydrodiff-login__submit:active {
+  transform: translateY(0);
+}
+
+.hydrodiff-login__submit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.hydrodiff-login__submit-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Secondary links */
+.hydrodiff-login__links {
+  text-align: center;
+}
+
+.hydrodiff-login__register {
+  font-size: 1rem;
+  color: #5a5a6e;
+  margin-bottom: 16px;
+}
+
+.hydrodiff-login__register a {
+  color: #00a0dc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hydrodiff-login__register a:hover {
+  text-decoration: underline;
+}
+
+.hydrodiff-login__guest {
+  margin-top: 8px;
+}
+
+.hydrodiff-login__guest a,
+.hydrodiff-login__guest button {
+  font-size: 1rem;
+  color: #1a1a2e;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hydrodiff-login__guest a:hover,
+.hydrodiff-login__guest button:hover {
+  text-decoration: underline;
+  color: #00a0dc;
+}
+
+/* Error messages */
+.hydrodiff-login__error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  color: #dc2626;
+  font-size: 0.95rem;
+}
+
+.hydrodiff-login__error svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Success messages */
+.hydrodiff-login__success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  color: #16a34a;
+  font-size: 0.95rem;
+}
+
+/* Recovery form (hidden by default) */
+.hydrodiff-login__recover {
+  display: none;
+}
+
+.hydrodiff-login__recover:target,
+.hydrodiff-login__recover:target + .hydrodiff-login__recover-form {
+  display: block;
+}
+
+.hydrodiff-login__recover:target ~ .hydrodiff-login__main-form {
+  display: none;
+}
+
+.hydrodiff-login__back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #5a5a6e;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 16px;
+}
+
+.hydrodiff-login__back-link:hover {
+  color: #00a0dc;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 990px) {
+  .hydrodiff-login {
+    flex-direction: column;
+  }
+
+  .hydrodiff-login__form-container {
+    padding: 40px 24px;
+    order: 1;
+  }
+
+  .hydrodiff-login__image-container {
+    padding: 24px;
+    order: 2;
+  }
+
+  .hydrodiff-login__title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hydrodiff-login__form-container {
+    padding: 32px 16px;
+  }
+
+  .hydrodiff-login__title {
+    font-size: 1.8rem;
+  }
+
+  .hydrodiff-login__subtitle {
+    font-size: 1rem;
+  }
+
+  .hydrodiff-login__input {
+    padding: 14px 16px;
+  }
+
+  .hydrodiff-login__submit {
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+}
+
+/* Hide default Shopify login styles when using Hydrodiff login */
+.customer.login.hydrodiff-active {
+  max-width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+.customer.login.hydrodiff-active > h1:not(.hydrodiff-login__title),
+.customer.login.hydrodiff-active > div:not(.hydrodiff-login) {
+  display: none;
+}
